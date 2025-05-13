@@ -5,3 +5,4 @@ scikit-learn
 librosa==0.10.0.post2
 soundfile==0.12.1
 requests
+setuptools>=60.0
