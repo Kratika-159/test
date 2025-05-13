@@ -21,7 +21,7 @@ def add_bg_and_style():
         """
         <style>
         .stApp {
-            background-image: url("https://www.shutterstock.com/image-vector/voice-assistant-concept-vector-sound-wave-1501076531"); 
+            background-image: url("https://itchronicles.com/wp-content/uploads/2020/10/speech-to-text-1024x683.jpg"); 
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
