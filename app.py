@@ -21,7 +21,7 @@ def add_bg_and_style():
         """
         <style>
         .stApp {
-            background-image: url("https://itchronicles.com/wp-content/uploads/2020/10/speech-to-text-1024x683.jpg"); 
+            background-image: url("https://developer-blogs.nvidia.com/wp-content/uploads/2022/06/ai-for-dev-blog-green-neon-wave-1600x950-2-1024x576.jpg"); 
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
