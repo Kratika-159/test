@@ -99,7 +99,7 @@ def main():
 
         st.markdown("---")
 
-        if st.button("🔍 Analyze Emotion")
+        if st.button("🔍 Analyze Emotion"):
             if audio_file is not None:
                 with st.spinner("Analyzing the emotion from the audio..."):
                     audio_data = audio_file.read()
