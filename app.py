@@ -31,7 +31,7 @@ def add_bg_and_style():
         .stApp > header, .stApp > footer {visibility: hidden;}
 
         .block-container {
-            background-color: rgba(255, 255, 255, 0.85);
+            background-color: rgba(255, 255, 255, 0.0);
             padding: 2rem;
             border-radius: 10px;
         }
