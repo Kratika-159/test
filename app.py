@@ -20,27 +20,31 @@ def add_bg_and_style():
     st.markdown(
         """
         <style>
-        body {
-            background-image: url("https://www.shutterstock.com/image-vector/voice-assistant-concept-vector-sound-wave-1501076531");
+        .stApp {
+            background-image: url("https://www.shutterstock.com/image-vector/voice-assistant-concept-vector-sound-wave-1501076531"); 
             background-size: cover;
             background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        .main {
+
+        .stApp > header, .stApp > footer {visibility: hidden;}
+
+        .block-container {
             background-color: rgba(255, 255, 255, 0.85);
             padding: 2rem;
             border-radius: 10px;
         }
+
         h1, h2, h3 {
             color: #4B8BBE;
             text-align: center;
-        }
-        .css-1aumxhk {
-            background-color: transparent;
         }
         </style>
         """,
         unsafe_allow_html=True
     )
+
 
 add_bg_and_style()
 
@@ -85,11 +89,6 @@ def main():
         st.markdown("<h1>🎤 Speech Emotion Recognizer</h1>", unsafe_allow_html=True)
         st.markdown("<p style='text-align:center'>Upload a `.wav` file and let AI detect the emotion in the speech.</p>", unsafe_allow_html=True)
 
-        with st.expander("ℹ️ How it works"):
-            st.write("""
-                This application uses a trained machine learning model to recognize emotions from audio speech.
-                It extracts MFCC, Chroma, and Mel-spectrogram features from the audio before making predictions.
-            """)
 
         st.markdown("## 📁 Upload Audio File")
         audio_file = st.file_uploader("Upload your `.wav` file", type=["wav"])
